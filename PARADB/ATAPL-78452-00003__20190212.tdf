@@ -1,0 +1,35 @@
+######################################################################################################
+# Telemetry Definition File:
+#
+# Type: Satlantic PAR Sensor 1401
+# Description: Digital (RS-232) PAR Sensor
+# Project: 505902216
+#
+# Notes:
+# 		The PAR sensor outputs comma-delimited ASCII data.
+#
+######################################################################################################
+# Calibration History
+# Date       |Operator |SW Version |Rev |Light Data   |Dark Data   |Lamp         |Distance  | Comments
+#-----------------------------------------------------------------------------------------------------
+# 2019-02-12 |RLamb    |Internal Software Suite 1.9.23_30 |A   |PAR1401f-1401_2019-02-12_13-29-52_raw |PAR1401d-1401_2019-02-12_09-23-35_raw |F1508        |50.0      | Final Calibration
+
+
+
+VLF_INSTRUMENT SATPAR '' 6 AS 0 NONE
+VLF_SN 1401 '' 4 AS 0 NONE
+
+# Time since start up
+FIELD NONE ',' 1 AS 0 DELIMITER
+TIMER NONE 'sec' V AF 0 COUNT
+
+# PARValue = A1 * ( COUNTS - A0 ) * Immersion
+FIELD NONE ',' 1 AS 0 DELIMITER
+PAR NONE 'uMol/m^2/sec' V AU 1 OPTIC2
+332219.4	3.35354716555e-004	1.3589
+
+# ASCII check sum
+FIELD NONE ',' 1 AS 0 DELIMITER
+CHECK SUM '' V AI 0 COUNT
+
+TERMINATOR NONE '\x0D\x0A' 2 AS 0 DELIMITER

@@ -1,0 +1,62 @@
+# Satlantic model # OCR-507 ICSW s/n 0251 SATNET
+# WHOI / 2013-7022 / with Bioshutters
+#############################################################################################################################################################
+# Calibration History
+# Date       |Operator |SW Version |Rev |Type |Light Data   |Dark Data   |Lamp         |Target       |Immersion Param  |Distance  | Comments
+#-------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 2014-01-23 |jennifer |1.9.8_118  |A   |ED   |DI7251fa-0251_2014-01-23_11-57-03_raw |DI7251da-0251_2014-01-23_11-37-56_raw |F1206        |             |March 2003       |50.0      | Initial Calibration
+# 2017-01-10 |jsherman |1.9.16_196 |B   |ED   |DI7251fb-0251_2017-01-09_11-38-12_raw |DI7251da-0251_2014-01-23_11-37-56_raw |F1366        |             |March 2003       |50.0      | Post Calibration
+# 2018-09-04 |rlamb    |1.9.23_30  |C   |ED   |DI7251f-0251_2018-09-04_13-09-55_raw |DI7251d-0251_2018-09-04_13-16-32_raw |F1507        |             |March 2003       |50.0      | Final Calibration
+
+
+
+INSTRUMENT SATDI7 '' 6 AS 0 NONE
+SN 0251 '' 4 AS 0 NONE
+
+# Time since commencement of normal operation
+TIMER NONE 'sec' 10 AF 0 COUNT
+
+# Sample Delay
+DELAY SAMPLE 'ms' 2 BS 0 COUNT
+
+# Wavelength Data
+
+ED 412.20 'uW/cm^2/nm' 4 BU 1 OPTIC2
+2147560256.9	2.11921116911e-007	1.368
+
+ED 443.62 'uW/cm^2/nm' 4 BU 1 OPTIC2
+2147373850.0	2.064904576e-007	1.410
+
+ED 489.70 'uW/cm^2/nm' 4 BU 1 OPTIC2
+2147441193.5	2.13760038589e-007	1.365
+
+ED 509.13 'uW/cm^2/nm' 4 BU 1 OPTIC2
+2147323075.4	2.16334493619e-007	1.354
+
+ED 554.96 'uW/cm^2/nm' 4 BU 1 OPTIC2
+2147024251.4	2.24151923735e-007	1.372
+
+ED 619.45 'uW/cm^2/nm' 4 BU 1 OPTIC2
+2147520834.5	2.24270714839e-007	1.322
+
+ED 683.46 'uW/cm^2/nm' 4 BU 1 OPTIC2
+2147214114.6	2.15878040752e-007	1.347
+
+# In-head ancillary measurements
+VS NONE 'Volts' 2 BU 1 POLYU
+0 0.03
+
+VA NONE 'Volts' 2 BU 1 POLYU
+0 0.03
+
+TEMP PCB 'Celsius' 2 BU 1 POLYU
+-50.0 0.5
+
+# Frame Counter (Data Integrity)
+FRAME COUNTER '' 1 BU 0 COUNT
+
+# Check Sum (Data Integrity)
+CHECK SUM '' 1 BU 0 COUNT
+
+# Frame Terminator
+CRLF TERMINATOR '' 2 BU 0 NONE

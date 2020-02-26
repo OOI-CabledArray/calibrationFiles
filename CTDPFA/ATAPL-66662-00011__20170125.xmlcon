@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SBE_InstrumentConfiguration SB_ConfigCTD_FileVersion="7.23.0.2" >
+  <Instrument Type="11" >
+    <Name>SBE 19plus V2 Seacat CTD</Name>
+    <PressureSensorType>1</PressureSensorType>
+    <ExternalVoltageChannels>2</ExternalVoltageChannels>
+    <Mode>0</Mode>
+    <!-- Serial RS-232 Sensor: 9 = Oxygen, Optode. -->
+    <SerialRS232C_Sensor>9</SerialRS232C_Sensor>
+    <SampleIntervalSeconds>10</SampleIntervalSeconds>
+    <ScansToAverage>4</ScansToAverage>
+    <SurfaceParVoltageAdded>0</SurfaceParVoltageAdded>
+    <ScanTimeAdded>0</ScanTimeAdded>
+    <NmeaPositionDataAdded>0</NmeaPositionDataAdded>
+    <NmeaDepthDataAdded>0</NmeaDepthDataAdded>
+    <NmeaTimeAdded>0</NmeaTimeAdded>
+    <NmeaDeviceConnectedToPC>0</NmeaDeviceConnectedToPC>
+    <SensorArray Size="6" >
+      <Sensor index="0" SensorID="58" >
+        <TemperatureSensor SensorID="58" >
+          <SerialNumber>50123</SerialNumber>
+          <CalibrationDate>25-Jan-17</CalibrationDate>
+          <A0>1.23970749e-003</A0>
+          <A1>2.78471513e-004</A1>
+          <A2>-1.54400791e-006</A2>
+          <A3>2.01900228e-007</A3>
+          <Slope>1.00000000</Slope>
+          <Offset>0.0000</Offset>
+        </TemperatureSensor>
+      </Sensor>
+      <Sensor index="1" SensorID="3" >
+        <ConductivitySensor SensorID="3" >
+          <SerialNumber>50123</SerialNumber>
+          <CalibrationDate>25-Jan-17</CalibrationDate>
+          <UseG_J>1</UseG_J>
+          <!-- Cell const and series R are applicable only for wide range sensors. -->
+          <SeriesR>0.0000</SeriesR>
+          <CellConst>2000.0000</CellConst>
+          <ConductivityType>0</ConductivityType>
+          <Coefficients equation="0" >
+            <A>0.00000000e+000</A>
+            <B>0.00000000e+000</B>
+            <C>0.00000000e+000</C>
+            <D>0.00000000e+000</D>
+            <M>0.0</M>
+            <CPcor>-9.57000000e-008</CPcor>
+          </Coefficients>
+          <Coefficients equation="1" >
+            <G>-9.70610090e-001</G>
+            <H>1.54442976e-001</H>
+            <I>-2.16816354e-004</I>
+            <J>4.19799728e-005</J>
+            <CPcor>-9.57000000e-008</CPcor>
+            <CTcor>3.2500e-006</CTcor>
+            <!-- WBOTC not applicable unless ConductivityType = 1. -->
+            <WBOTC>0.00000000e+000</WBOTC>
+          </Coefficients>
+          <Slope>1.00000000</Slope>
+          <Offset>0.00000</Offset>
+        </ConductivitySensor>
+      </Sensor>
+      <Sensor index="2" SensorID="46" >
+        <PressureSensor SensorID="46" >
+          <SerialNumber>50123</SerialNumber>
+          <CalibrationDate>24-Jan-17</CalibrationDate>
+          <PA0>-4.62059951e-001</PA0>
+          <PA1>1.54355746e-003</PA1>
+          <PA2>9.20209994e-012</PA2>
+          <PTEMPA0>-7.56579918e+001</PTEMPA0>
+          <PTEMPA1>4.62866507e+001</PTEMPA1>
+          <PTEMPA2>2.04706521e-001</PTEMPA2>
+          <PTCA0>5.24283232e+005</PTCA0>
+          <PTCA1>-1.29502578e+001</PTCA1>
+          <PTCA2>-7.56974127e-002</PTCA2>
+          <PTCB0>2.48597500e+001</PTCB0>
+          <PTCB1>3.50000000e-004</PTCB1>
+          <PTCB2>0.00000000e+000</PTCB2>
+          <Offset>0.000000</Offset>
+        </PressureSensor>
+      </Sensor>
+      <Sensor index="3" SensorID="27" >
+        <NotInUse SensorID="27" >
+          <SerialNumber></SerialNumber>
+          <CalibrationDate></CalibrationDate>
+          <OutputType>2</OutputType>
+          <Free>1</Free>
+        </NotInUse>
+      </Sensor>
+      <Sensor index="4" SensorID="27" >
+        <NotInUse SensorID="27" >
+          <SerialNumber></SerialNumber>
+          <CalibrationDate></CalibrationDate>
+          <OutputType>2</OutputType>
+          <Free>1</Free>
+        </NotInUse>
+      </Sensor>
+      <Sensor index="5" SensorID="64" >
+        <OptodeOxygenAanderaa SensorID="64" >
+          <SerialNumber></SerialNumber>
+          <CalibrationDate></CalibrationDate>
+          <DoSalinityCorrection>0</DoSalinityCorrection>
+          <DoDepthCorrection>0</DoDepthCorrection>
+          <InternalSalinity>0.00000e+000</InternalSalinity>
+        </OptodeOxygenAanderaa>
+      </Sensor>
+    </SensorArray>
+  </Instrument>
+</SBE_InstrumentConfiguration>

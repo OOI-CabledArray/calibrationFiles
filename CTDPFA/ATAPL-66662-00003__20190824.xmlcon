@@ -1,36 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SBE_InstrumentConfiguration SB_ConfigCTD_FileVersion="7.23.0.2" >
-  <Instrument Type="10" >
-    <Name>SBE 16plus V2 Seacat CTD</Name>
-    <PressureSensorType>2</PressureSensorType>
-    <MooredPressure>0.00000e+000</MooredPressure>
-    <TemperatureType>0</TemperatureType>
-    <UserSuppliedTemperature>1.50000e+001</UserSuppliedTemperature>
-    <ExternalVoltageChannels>0</ExternalVoltageChannels>
+<SBE_InstrumentConfiguration SB_ConfigCTD_FileVersion="7.26.1.0" >
+  <Instrument Type="11" >
+    <Name>SBE 19plus V2 Seacat CTD</Name>
+    <PressureSensorType>1</PressureSensorType>
+    <ExternalVoltageChannels>1</ExternalVoltageChannels>
+    <Mode>0</Mode>
     <!-- Serial RS-232 Sensor: 0 = None. -->
     <SerialRS232C_Sensor>0</SerialRS232C_Sensor>
-    <SampleIntervalSeconds>1.00000e+001</SampleIntervalSeconds>
+    <SampleIntervalSeconds>10</SampleIntervalSeconds>
+    <ScansToAverage>4</ScansToAverage>
+    <SurfaceParVoltageAdded>0</SurfaceParVoltageAdded>
+    <ScanTimeAdded>0</ScanTimeAdded>
     <NmeaPositionDataAdded>0</NmeaPositionDataAdded>
     <NmeaDepthDataAdded>0</NmeaDepthDataAdded>
     <NmeaTimeAdded>0</NmeaTimeAdded>
     <NmeaDeviceConnectedToPC>0</NmeaDeviceConnectedToPC>
-    <SensorArray Size="3" >
+    <SensorArray Size="4" >
       <Sensor index="0" SensorID="58" >
         <TemperatureSensor SensorID="58" >
-          <SerialNumber>50128</SerialNumber>
-          <CalibrationDate>07-Mar-17</CalibrationDate>
-          <A0>1.21264463e-003</A0>
-          <A1>2.76321848e-004</A1>
-          <A2>-5.70228661e-007</A2>
-          <A3>1.64649791e-007</A3>
+          <SerialNumber>7232</SerialNumber>
+          <CalibrationDate>24-Aug-19</CalibrationDate>
+          <A0>1.25477149e-003</A0>
+          <A1>2.74379225e-004</A1>
+          <A2>-1.02261471e-006</A2>
+          <A3>1.77613935e-007</A3>
           <Slope>1.00000000</Slope>
           <Offset>0.0000</Offset>
         </TemperatureSensor>
       </Sensor>
       <Sensor index="1" SensorID="3" >
         <ConductivitySensor SensorID="3" >
-          <SerialNumber>50128</SerialNumber>
-          <CalibrationDate>07-Mar-17</CalibrationDate>
+          <SerialNumber>7232</SerialNumber>
+          <CalibrationDate>24-Aug-19</CalibrationDate>
           <UseG_J>1</UseG_J>
           <!-- Cell const and series R are applicable only for wide range sensors. -->
           <SeriesR>0.0000</SeriesR>
@@ -45,10 +46,10 @@
             <CPcor>-9.57000000e-008</CPcor>
           </Coefficients>
           <Coefficients equation="1" >
-            <G>-9.88970900e-001</G>
-            <H>1.52628200e-001</H>
-            <I>-1.70613900e-004</I>
-            <J>3.53391600e-005</J>
+            <G>-9.72157450e-001</G>
+            <H>1.34397299e-001</H>
+            <I>-3.16293078e-004</I>
+            <J>4.14217414e-005</J>
             <CPcor>-9.57000000e-008</CPcor>
             <CTcor>3.2500e-006</CTcor>
             <!-- WBOTC not applicable unless ConductivityType = 1. -->
@@ -60,22 +61,30 @@
       </Sensor>
       <Sensor index="2" SensorID="46" >
         <PressureSensor SensorID="46" >
-          <SerialNumber>50128</SerialNumber>
-          <CalibrationDate>07-May-15</CalibrationDate>
-          <PA0>-6.41971000e+000</PA0>
-          <PA1>1.75925500e-002</PA1>
-          <PA2>-8.69441500e-010</PA2>
-          <PTEMPA0>1.94132400e+002</PTEMPA0>
-          <PTEMPA1>-6.28249800e+001</PTEMPA1>
-          <PTEMPA2>-1.08460100e-001</PTEMPA2>
-          <PTCA0>5.23981700e+005</PTCA0>
-          <PTCA1>-6.87067200e+000</PTCA1>
-          <PTCA2>-4.19106100e-001</PTCA2>
-          <PTCB0>2.51238800e+001</PTCB0>
-          <PTCB1>-4.25000000e-004</PTCB1>
+          <SerialNumber>7232</SerialNumber>
+          <CalibrationDate>22-Aug-19</CalibrationDate>
+          <PA0>3.50322452e-002</PA0>
+          <PA1>1.55011995e-003</PA1>
+          <PA2>8.39857513e-012</PA2>
+          <PTEMPA0>-5.34316186e+001</PTEMPA0>
+          <PTEMPA1>5.68484487e+001</PTEMPA1>
+          <PTEMPA2>-7.73189625e-001</PTEMPA2>
+          <PTCA0>5.24768635e+005</PTCA0>
+          <PTCA1>3.80906438e+000</PTCA1>
+          <PTCA2>-1.21218112e-001</PTCA2>
+          <PTCB0>2.50175000e+001</PTCB0>
+          <PTCB1>-3.00000000e-004</PTCB1>
           <PTCB2>0.00000000e+000</PTCB2>
           <Offset>0.000000</Offset>
         </PressureSensor>
+      </Sensor>
+      <Sensor index="3" SensorID="27" >
+        <NotInUse SensorID="27" >
+          <SerialNumber></SerialNumber>
+          <CalibrationDate></CalibrationDate>
+          <OutputType>2</OutputType>
+          <Free>1</Free>
+        </NotInUse>
       </Sensor>
     </SensorArray>
   </Instrument>

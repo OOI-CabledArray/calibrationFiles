@@ -1,0 +1,61 @@
+# Satlantic model # OCR-507 ICSW s/n 0233 SATNET
+# University of Washington / 2012-748 / with Bioshutter
+#############################################################################################################################################################
+# Calibration History
+# Date       |Operator |SW Version |Rev |Type |Light Data   |Dark Data   |Lamp         |Target       |Immersion Param  |Distance  | Comments
+#-------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 2013-02-15 |jennifer |1.9.0_11   |A   |ED   |DI7233fa6-0233_2013-02-15_12-16-58_raw |DI7233da6-0233_2013-02-15_11-59-56_raw |F1001    |             |March 2003       |50.0      | initial Calibration
+# 2019-10-29 |rlamb    |1.9.23_30  |B   |ED   |DI7233f-0233_2019-10-29_16-00-05_raw |DI7233d-0233_2019-10-29_14-16-20_raw |F1573        |             |March 2003       |50.0      | Final Calibration
+
+
+
+INSTRUMENT SATDI7 '' 6 AS 0 NONE
+SN 0233 '' 4 AS 0 NONE
+
+# Time since commencement of normal operation
+TIMER NONE 'sec' 10 AF 0 COUNT
+
+# Sample Delay
+DELAY SAMPLE 'ms' 2 BS 0 COUNT
+
+# Wavelength Data
+
+ED 412.52 'uW/cm^2/nm' 4 BU 1 OPTIC2
+2147448541.1	2.07885894297e-007	1.368
+
+ED 443.91 'uW/cm^2/nm' 4 BU 1 OPTIC2
+2147756164.6	2.03759101686e-007	1.410
+
+ED 489.65 'uW/cm^2/nm' 4 BU 1 OPTIC2
+2146731239.0	2.12147985133e-007	1.365
+
+ED 510.21 'uW/cm^2/nm' 4 BU 1 OPTIC2
+2147564440.9	2.05607912796e-007	1.354
+
+ED 554.80 'uW/cm^2/nm' 4 BU 1 OPTIC2
+2147911389.3	2.07998528561e-007	1.372
+
+ED 619.10 'uW/cm^2/nm' 4 BU 1 OPTIC2
+2147492664.6	2.13389133435e-007	1.322
+
+ED 682.42 'uW/cm^2/nm' 4 BU 1 OPTIC2
+2147450465.9	2.05357062502e-007	1.347
+
+# In-head ancillary measurements
+VS NONE 'Volts' 2 BU 1 POLYU
+0 0.03
+
+VA NONE 'Volts' 2 BU 1 POLYU
+0 0.03
+
+TEMP PCB 'Celsius' 2 BU 1 POLYU
+-50.0 0.5
+
+# Frame Counter (Data Integrity)
+FRAME COUNTER '' 1 BU 0 COUNT
+
+# Check Sum (Data Integrity)
+CHECK SUM '' 1 BU 0 COUNT
+
+# Frame Terminator
+CRLF TERMINATOR '' 2 BU 0 NONE

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SBE_InstrumentConfiguration SB_ConfigCTD_FileVersion="7.23.0.2" >
+  <Instrument Type="10" >
+    <Name>SBE 19plus V2 Seacat CTD</Name>
+    <PressureSensorType>2</PressureSensorType>
+    <MooredPressure>0.00000e+000</MooredPressure>
+    <TemperatureType>0</TemperatureType>
+    <UserSuppliedTemperature>1.50000e+001</UserSuppliedTemperature>
+    <ExternalVoltageChannels>0</ExternalVoltageChannels>
+    <!-- Serial RS-232 Sensor: 0 = None. -->
+    <SerialRS232C_Sensor>0</SerialRS232C_Sensor>
+    <SampleIntervalSeconds>1.00000e+001</SampleIntervalSeconds>
+    <NmeaPositionDataAdded>0</NmeaPositionDataAdded>
+    <NmeaDepthDataAdded>0</NmeaDepthDataAdded>
+    <NmeaTimeAdded>0</NmeaTimeAdded>
+    <NmeaDeviceConnectedToPC>0</NmeaDeviceConnectedToPC>
+    <SensorArray Size="3" >
+      <Sensor index="0" SensorID="58" >
+        <TemperatureSensor SensorID="58" >
+          <SerialNumber>50327</SerialNumber>
+          <CalibrationDate>13-Oct-22</CalibrationDate>
+          <A0>1.26613200e-003</A0>
+          <A1>2.67451610e-004</A1>
+          <A2>-1.60848550e-007</A2>
+          <A3>1.38431507e-007</A3>
+          <Slope>1.00000000</Slope>
+          <Offset>0.0000</Offset>
+        </TemperatureSensor>
+      </Sensor>
+      <Sensor index="1" SensorID="3" >
+        <ConductivitySensor SensorID="3" >
+          <SerialNumber>50327</SerialNumber>
+          <CalibrationDate>13-Oct-22</CalibrationDate>
+          <UseG_J>1</UseG_J>
+          <!-- Cell const and series R are applicable only for wide range sensors. -->
+          <SeriesR>0.0000</SeriesR>
+          <CellConst>2000.0000</CellConst>
+          <ConductivityType>0</ConductivityType>
+          <Coefficients equation="0" >
+            <A>0.00000000e+000</A>
+            <B>0.00000000e+000</B>
+            <C>0.00000000e+000</C>
+            <D>0.00000000e+000</D>
+            <M>0.0</M>
+            <CPcor>-9.57000000e-008</CPcor>
+          </Coefficients>
+          <Coefficients equation="1" >
+            <G>-1.00067085e+000</G>
+            <H>1.55428230e-001</H>
+            <I>-1.40291321e-004</I>
+            <J>3.31511547e-005</J>
+            <CPcor>-9.57000000e-008</CPcor>
+            <CTcor>3.2500e-006</CTcor>
+            <!-- WBOTC not applicable unless ConductivityType = 1. -->
+            <WBOTC>0.00000000e+000</WBOTC>
+          </Coefficients>
+          <Slope>1.00000000</Slope>
+          <Offset>0.00000</Offset>
+        </ConductivitySensor>
+      </Sensor>
+      <Sensor index="2" SensorID="46" >
+        <PressureSensor SensorID="46" >
+          <SerialNumber>50327</SerialNumber>
+          <CalibrationDate>12-Oct-22</CalibrationDate>
+          <PA0>1.30166382e-001</PA0>
+          <PA1>9.01304391e-003</PA1>
+          <PA2>4.41162512e-011</PA2>
+          <PTEMPA0>-8.26927612e+001</PTEMPA0>
+          <PTEMPA1>3.87038905e+001</PTEMPA1>
+          <PTEMPA2>1.59581350e+000</PTEMPA2>
+          <PTCA0>5.26384808e+005</PTCA0>
+          <PTCA1>-7.44246178e+000</PTCA1>
+          <PTCA2>3.97001727e-001</PTCA2>
+          <PTCB0>1.02758985e+002</PTCB0>
+          <PTCB1>1.42554693e-003</PTCB1>
+          <PTCB2>0.00000000e+000</PTCB2>
+          <Offset>0.000000</Offset>
+        </PressureSensor>
+      </Sensor>
+    </SensorArray>
+  </Instrument>
+</SBE_InstrumentConfiguration>

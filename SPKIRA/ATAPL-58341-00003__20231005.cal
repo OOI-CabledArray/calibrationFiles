@@ -1,0 +1,66 @@
+# Satlantic model # OCR-507 ICSW s/n 0245 SATNET
+# University of Washington / 2013-7011 / with Bioshutter s/n 191
+#############################################################################################################################################################
+# Calibration History
+# Date       |Operator |SW Version |Rev |Type |Light Data   |Dark Data   |Lamp         |Target       |Immersion Param  |Distance  | Comments
+#-------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 2013-11-19 |Jenn     |1.9.7_106  |A   |ED  |DI7245fa2-0245_2013-11-19_09-41-55_raw|DI7245da2-0245_2013-11-19_09-25-14_raw|F1206      |             |March 2003       |50.0      | Initial Calibration
+# 2016-01-11 |jsherman |1.9.16_196 |B   |ED  |DI7245fb-0245_2016-01-11_11-19-42_raw|DI7245db-0245_2016-01-11_11-16-23_raw|F1335        |             |March 2003       |50.0      | Post Calibration
+# 2017-11-10 |rlamb    |1.9.23_30  |C   |ED  |DI7245f-0245_2017-11-09_17-19-13_raw |DI7245db-0245_2016-01-11_11-16-23_raw|F1449        |             |March 2003       |50.0      | Regular Calibration
+# 2017-11-14 |rlamb    |1.9.23_30  |D   |ED  |DI7245f-0245_2017-11-14_09-11-34_raw |DI7245d-0245_2017-11-14_10-35-30_raw |F1443        |             |March 2003       |50.0      | Regular Calibration
+# 2019-10-01 |rlamb    |1.9.23_30  |E   |ED  |DI7245f-0245_2019-10-01_15-03-04_raw |DI7245d-0245_2019-10-01_14-54-46_raw |F1567        |             |March 2003       |50.0      | Final Calibration
+# 2021-09-23 |rlamb    |1.9.23_30  |F   |ED   |DI7245f-0245_2021-09-23_10-07-22_raw |DI7245d-0245_2021-09-23_10-56-44_raw |F1674        |             |March 2003       |50.0      | Final Calibration
+# 2023-10-05 |mswenson |1.9.23_30  |G   |ED   |DI7245f-0245_2023-10-04_09-32-22_raw |DI7245d-0245_2023-10-05_09-00-45_raw |F1740        |             |March 2003       |50.0      | Final Calibration
+
+
+
+INSTRUMENT SATDI7 '' 6 AS 0 NONE
+SN 0245 '' 4 AS 0 NONE
+
+# Time since commencement of normal operation
+TIMER NONE 'sec' 10 AF 0 COUNT
+
+# Sample Delay
+DELAY SAMPLE 'ms' 2 BS 0 COUNT
+
+# Wavelength Data
+
+ED 412.23 'uW/cm^2/nm' 4 BU 1 OPTIC2
+2147222223.8	2.12089722409e-007	1.368
+
+ED 442.97 'uW/cm^2/nm' 4 BU 1 OPTIC2
+2147326015.9	2.10342409361e-007	1.410
+
+ED 489.65 'uW/cm^2/nm' 4 BU 1 OPTIC2
+2148267639.7	1.96576560897e-007	1.365
+
+ED 509.20 'uW/cm^2/nm' 4 BU 1 OPTIC2
+2147045273.9	2.08392717157e-007	1.354
+
+ED 555.57 'uW/cm^2/nm' 4 BU 1 OPTIC2
+2147299226.5	1.98724361148e-007	1.372
+
+ED 619.37 'uW/cm^2/nm' 4 BU 1 OPTIC2
+2147134945.3	2.13115524889e-007	1.322
+
+ED 682.31 'uW/cm^2/nm' 4 BU 1 OPTIC2
+2146767637.1	2.11478939766e-007	1.347
+
+# In-head ancillary measurements
+VS NONE 'Volts' 2 BU 1 POLYU
+0 0.03
+
+VA NONE 'Volts' 2 BU 1 POLYU
+0 0.03
+
+TEMP PCB 'Celsius' 2 BU 1 POLYU
+-50.0 0.5
+
+# Frame Counter (Data Integrity)
+FRAME COUNTER '' 1 BU 0 COUNT
+
+# Check Sum (Data Integrity)
+CHECK SUM '' 1 BU 0 COUNT
+
+# Frame Terminator
+CRLF TERMINATOR '' 2 BU 0 NONE

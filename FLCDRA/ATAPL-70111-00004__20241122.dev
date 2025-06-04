@@ -1,0 +1,19 @@
+ECO 	FLCDRTD-3715	
+Created on: 	11/22/2024	
+		
+:     	chl=ug/l        	
+:       LSS=NTU		
+: 	"iengrunits = µg/l for CHL, PC, PE. Ppb for CDOM and uranine."	
+: 	column 5 = input scale factor and offset.	
+		
+maxvoltage=	5.007	
+asv1=	18.7500	
+asv2=	37.6448	
+asv4=	74.7126	
+		
+COLUMNS=5		
+N/U=1		
+N/U=2		
+N/U=3		
+CDOM=4	0.0229	50
+N/U=5		
